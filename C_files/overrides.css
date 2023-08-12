@@ -1,0 +1,77 @@
+.our-mandis {
+    background-color: #dfdfdf;
+    padding: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #286262;
+    font-size: 111%;
+}
+.product-categories-wrapper {
+    padding-top: 25px;
+}
+.product-category-wrapper {
+    padding-bottom: 25px;
+}
+.product-category-wrapper .fruit-image-wrapper img {
+    max-width: 150px;
+}
+
+.product-category-wrapper .fruit-image-wrapper .fruit-label {
+    padding-top: 5px;
+}
+.mandi-locations-wrapper {
+    padding-left: 10px !important;
+}
+
+.mandi-locations-wrapper .locations {
+    list-style-type: none;  
+    padding: 0px
+
+}
+
+.mandi-locations-wrapper .locations li {
+    margin-bottom: 3px;
+    font-size: 111%;
+    color: rgb(86, 86, 86);
+}
+
+.mandi-locations-wrapper .just-launched {
+    font-size: 95%;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    animation-duration: 2s; 
+    color: #286262;
+    font-weight: bold;
+
+}
+
+.carousel-caption {
+    top: 100px !important;
+}
+
+.coming-soon-wrapper {
+    padding-bottom: 20px;
+}
+.coming-soon-wrapper .img-wrapper img {
+    max-width: 150px;
+}
+
+.coming-soon-wrapper .fruit-name {
+    color: #757575;
+    font-weight: normal;
+    font-size: 101%;
+}
+
+.coming-soon-wrapper .soon {
+    padding-top: 2px;
+    color:#7d7d7d;
+    font-weight: bold;
+    font-size: 121%;
+}
+
+.coming-soon-wrapper .location {
+    padding-top: 10px;
+    color: #286262;
+    font-weight: bold;
+    font-size: 141%;
+}
