@@ -222,18 +222,8 @@
         .navbar-brand {
             display: flex;
             align-items: center;
-        }
-        
-        .back-link {
-            color: #008080;
-            text-decoration: none;
-            font-size: 18px;
-            margin-right: 15px;
-        }
-        
-        .back-link:hover {
-            color: #006666;
-            text-decoration: none;
+            justify-content: center;
+            width: 100%;
         }
     </style>
 </head>
@@ -243,12 +233,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-brand">
-                    <a href="index.html" class="back-link">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                    <a href="index.html">
-                        <img width="190" src="./C_files/FruitX.png" alt="FruitX Logo">
-                    </a>
+                    <img width="190" src="./C_files/FruitX.png" alt="FruitX Logo">
                 </div>
             </div>
         </nav>
@@ -384,7 +369,7 @@
                         );
                     } else {
                         const message = `No, ${phoneNumber} has not transacted in FruitX.`;
-                        showResult(message, 'not-found');
+                        showResult(message, 'error');
                     }
                 } else {
                     const errorMessage = data.message || data.error || 'Unknown error from server';
