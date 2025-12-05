@@ -46,7 +46,7 @@
 <br/>
 <br/>
 <div class="container">
-  <iframe src="privacy-policy-content.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+  <iframe id="policy-iframe" src="privacy-policy-content.html" style="width: 100%; height: 100vh; border: none;"></iframe>
 </div>
 
 <section id="contact" class="contact">
@@ -129,6 +129,23 @@ $(function() {
       target: '.navbar-fixed-top',
       offset: 80
   });
+
+  // Handle dynamic iframe content loading based on URL parameters
+  function loadPolicyContent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const policyType = urlParams.get('type');
+    const iframe = document.getElementById('policy-iframe');
+    
+    if (policyType === 'sunehara-kal') {
+      iframe.src = 'sunehara-kal-privacy-policy-content.html';
+    } else {
+      // Default to regular privacy policy
+      iframe.src = 'privacy-policy-content.html';
+    }
+  }
+
+  // Load appropriate content on page load
+  loadPolicyContent();
 
   // Page scrolling feature
   $('a.page-scroll').bind('click', function(event) {
